@@ -6,6 +6,8 @@
     --box: #E5E5E5;
     /* font */
     --montserrat: 'Montserrat';
+    /* responsive */
+    --desktop: 300px;
 }
 * {
     box-sizing: border-box;
@@ -56,6 +58,11 @@ img {
     color: var(--textSecondary);
     font-size: 10px;
 }
+@media only screen and (min-width: 1024px) {
+    #Profile-Pic { width: 170px; }
+    #Heading { font-size: 20px; margin-top: 15px; }
+    #Not-Heading { font-size: 14px; margin-top: 7px; }
+}
 #Stats {
     display: flex;
     align-items: center;
@@ -80,6 +87,17 @@ img {
 #Stat-Descrip {
     color: var(--textSecondary);
     font-size: 12px;
+}
+@media only screen and (min-width: 1024px) {
+    #IndiStat {
+        height: 65px;
+        width: 120px;
+        margin: 0px 10px;
+
+    }
+    #Start-Num, #Stat-Descrip {
+        font-size: 16px;
+    }
 }
 #ImageGrid {
     display: grid;
@@ -144,3 +162,21 @@ img {
     transition: all 0.5s;
 }
 .sixth:hover { box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+
+@media only screen and (min-width: 1024px) {
+    #ImageGrid {
+        display: grid;
+        grid-template-columns: var(--desktop) var(--desktop) var(--desktop);
+        grid-template-rows: var(--desktop) var(--desktop) var(--desktop);
+        grid-gap: 15px;
+        align-items: end;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .one { width: 300px; }
+    .two { width: 600px; height: 300px; }
+    .third { width: 600px; height: 300px; }
+    .fourth { height: 600px; width: 300px; }
+    .fifth { width: 300px; }
+    .sixth { width: 300px; }
+}
