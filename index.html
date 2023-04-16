@@ -21,75 +21,45 @@
       rel="stylesheet"
     />
 
-    <title>Devchallenges</title>
+    <!-- FONTs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
+    <!-- STYLESHEEt -->
+    <link rel="stylesheet" href="./styles.css">
 
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <title>MY Gallery</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <div id="Container">
+      <div id="Profile">
+        <img src="./assets/profilePhoto.png" alt="Profile Photo" id="Profile-Pic">
+        <h1 id="Heading">Rodney Cotton</h1>
+        <h2 id="Not-Heading">Helsinki, Finland</h2>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <div id="Stats">
+        <div id="IndiStat">
+          <p id="Stat-Num">100</p>
+          <p id="Stat-Descrip">Posts</p>
+        </div>
+        <div id="IndiStat">
+          <p id="Stat-Num">2,242</p>
+          <p id="Stat-Descrip">Followers</p>
+        </div>
+        <div id="IndiStat">
+          <p id="Stat-Num">1,432</p>
+          <p id="Stat-Descrip">Following</p>
+        </div>
+      </div>
+      <div id="ImageGrid">
+        <img src="/assets/photo1.png" alt="Photo" class="image one">
+        <img src="/assets/photo2.png" alt="Photo" class="image two">
+        <img src="/assets/photo3.png" alt="Photo" class="image third">
+        <img src="/assets/photo_4.png" alt="Photo" class="image fourth">
+        <img src="/assets/photo5.png" alt="Photo" class="image fifth">
+        <img src="/assets/photo6.png" alt="Photo" class="image sixth">
+      </div>
     </div>
   </body>
 </html>
